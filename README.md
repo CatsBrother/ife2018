@@ -9,6 +9,10 @@
 ![简历3](https://github.com/CatsBrother/ife2018/raw/master/readMeImg/resume3.png)
 第三份简历难度也不大，还是比较好写的。
 这三个小练习写完了，过程磕磕绊绊不是很流畅，有的东西不太熟悉，需要查一查才知道问题出在哪里，怎样解决。基础还是不够牢固。
+
+# 在线预览
+https://catsbrother.github.io/ife2018/resume.html.
+
 下面总结几个小知识点：
 
 # BFC
@@ -46,3 +50,4 @@ readme可以自动将链接解析为图片并替代。
 
 # 怎样在线预览
 https://www.jianshu.com/p/75e30889e70a
+
