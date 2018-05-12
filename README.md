@@ -37,6 +37,16 @@ clear属性只是在block元素是起作用，如果你把clear:both用在一个
     visibility: hidden;
 }
 
+# 分栏高度自动相等
+简历2 左侧的一栏高度不能自适应，看了张旭鑫的博客学会了一个好方法，
+主要思想是父元素 overflow：hidden
+然后子元素设置
+margin-bottom:-3000px; 
+padding-bottom:3000px;
+
+也就是设置一个远远大于高度的padding值，然后用负值的margin把padding抵消掉。
+详见：http://www.zhangxinxu.com/wordpress/2010/03/%E7%BA%AFcss%E5%AE%9E%E7%8E%B0%E4%BE%A7%E8%BE%B9%E6%A0%8F%E5%88%86%E6%A0%8F%E9%AB%98%E5%BA%A6%E8%87%AA%E5%8A%A8%E7%9B%B8%E7%AD%89/
+
 
 # readme怎样插入图片
 顺便解决了一下github readme怎样添加图片
