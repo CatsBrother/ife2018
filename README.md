@@ -43,3 +43,6 @@ clear属性只是在block元素是起作用，如果你把clear:both用在一个
 readme可以自动将链接解析为图片并替代。
 
 # 浮动元素自动变成块元素
+
+# 怎样在线预览
+https://www.jianshu.com/p/75e30889e70a
