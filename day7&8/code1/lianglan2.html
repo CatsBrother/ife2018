@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>两栏2</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+<style type="text/css">
+	/*float
+	#one{
+		width: 200px;
+		height: 500px;
+		background-color: #0ff;
+		float: left;
+		margin-left: -200px;
+	}
+	#two{
+		width: 100%;
+		height: 500px;
+		background-color: #ff0;
+		float: left
+	}
+	#content{
+		padding-left: 200px;
+	}
+	*/
+	/* 定位*{
+		margin: 0;
+		padding: 0;
+	}
+	#one{
+		width: 200px;
+		height: 500px;
+		background-color: #0ff;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	#two{
+		width: 100%;
+		padding-left: 200px;
+		height: 500px;
+		background-color: #ff0;
+		overflow: hidden;
+		word-wrap: break-word;
+	} */
+
+	 *{
+		margin: 0;
+		padding: 0;
+	}
+	#one{
+		width: 300px;
+		background-color: #0ff;
+		word-wrap: break-word;
+	}
+	#two{
+		height: 500px;
+		flex: 1; /*  填满剩余部分 */
+		padding-right: -200px;
+		background-color: #ff0;
+		word-wrap: break-word;
+
+	}
+	#content{
+		display: flex;
+		height: 500px;
+		flex-flow: row;
+	} 
+</style>
+</head>
+<body>
+	<div id="content">
+	    <div id="one">kaitouaaaaa aaaaaaaaaa aaaaaaa aaaaaa aaaaaaaaa aaaaaaa aaaaaaaaa aaaaaaa aaaaaa aaaaaaaa aaaaaaaa aaaa aaaaa  aaaaa aaaaaaaa aaaaaa aaaaa aaaaaaaa aa</div>
+	    <div id="two">kaitouaaaaa aaaaaaaaaa aaaaaaa aaaaaa aaaaaaaaa aaaaaaa aaaaaaaaa aaaaaaa aaaaaa aaaaaaaa aaaaaaaa aaaa aaaaa  aaaaa aaaaaaaa aaaaaaa aaaaa aaaaaa aaaaaaa aaaaaaaa aaaaaaaaa aaaaaa aaaaaa aaaaaaaaaaaaa aaaaaaaa aaaaaaa aaaaaaaaaaaa aaaaa aa aaaa aaaaaa aaaaa aaaaaaaaa aaaaa aaaaaaaa aaaaaa aaaaa aaaaaaaa aaaa aaa aaa aaaaaaaa  aaaaaaaaaaa aaaaaaa aaaaaa aaaaa aaaaaa aaaaaaa aaa aaaaaa aaaaaaaaaa aaaaaaaaaaa aaaaaa aaaaaaa aaaaa aaaaaaaaaa aaaa aaaaaaa aaaaa aaaaaaa aaaaaaaaa aaaaaa aaaaaaa aaaaa aaaaaaaaa aaaaaaaaaa aaaaaaa  aaaaaaaaaaaa aaaaaaaaaaa aaaaa aaaa aaaaaaa aaaa aaaaaaa aaaaaaaaa aaaa aaaa aaaaaa aaaaaa aaaaaajiewei</div>
+	</div> 
+</body>
+</html>
