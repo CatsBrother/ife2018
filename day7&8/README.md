@@ -10,11 +10,11 @@
 - clear：both；  clear改变自身元素位置
 - after伪类
 为父元素添加after伪类
-'.clearfix:after{
-    content:"";
-    display:table;
-    clear:both;
-}'
+' .clearfix:after{  
+    content:"";  
+    display:table;  
+    clear:both;  
+} '
 ### 包裹性
 块元素默认占据整行的宽度，浮动之后宽度为width。
 元素浮动之后浮动元素之间距离消失（也就是空格没有了）。
