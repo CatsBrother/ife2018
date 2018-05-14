@@ -66,7 +66,7 @@ box-sizing主要包括两个
 #### box-sizing：content-box
 W3C标准，为默认值，content-box的width和height只包含content，不包括border，margin，padding
 #### border-box
-IE标准  包括content，border，padding   ** 不包括margin **
+IE标准  包括content，border，padding   **不包括margin**
 
 
 
