@@ -20,4 +20,4 @@ visited:已经访问过
 真的好用！
 关于子元素在主轴上的分布
 justify-content：（主轴，默认值为flex-start）如图所示
-![justify](https://github.com/CatsBrother/ife2018/raw/master/readMeImg/justify.png) 
+![justify](https://github.com/CatsBrother/ife2018/raw/master/readMeImg/justify.PNG) 
