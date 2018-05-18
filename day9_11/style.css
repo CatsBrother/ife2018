@@ -225,38 +225,51 @@ header h3{
 	text-align: center;
 	margin-bottom: 35px;
 }
-.tt div{
-	background-size: contain;
-	background-repeat: no-repeat;
-	width: 435px;
-	height: 315px;
-	margin-bottom: 10px;
-}
 .part3 .pcenter{
 	text-align: center;
 	width: 700px;
 	margin: 0 auto;
 	margin-bottom: 35px;
 }
-.teacher1{
-	background: url('images/photo1.png'); 
-	padding: 110px;
+.tt .teacher{
+	width: 435px;
+	margin-bottom: 10px;
+	height: 330px;
 }
-.teacher1 h3{
+.teacher>img{
+	width: 435px;
+	height: 330px;
+	z-index: -1;
+}
+.ifm{
+	background-color: rgba(20, 20, 20, 0.5);
+	position: relative;
+	display:none;
+	width: 435px;
+	height: 330px;
+	padding: 100px 100px 0 100px;
+	top: -340px;
+	right: 0;
+}
+.teacher:active .ifm{
+	background-color: rgba(20, 20, 20, 0.5);
+	display: block;
+}
+.ifm h3{
 	text-align: center;
 	color: #fff;
 	font: bold 16px/30px sans-serif;
 }
-.teacher1 p{
+.ifm p{
 	color: #9e9e9e;
 	text-align: center;
 	margin-bottom: 30px;
 }
-.teacher1 ul{
+.ifm ul{
 	display: flex;
 	justify-content: space-around;
 }
-.teacher1 a{
+.ifm a{
 	display: table-cell;
 	text-align: center;
 	vertical-align:middle;
@@ -266,15 +279,6 @@ header h3{
 	border-radius: 40px;
 }
 
-.teacher2{
-	background: url('images/photo2.png'); 
-}
-.teacher3{
-	background: url('images/photo3.png'); 
-}
-.teacher4{
-	background: url('images/photo4.png'); 
-}
 
 
 .part4{
