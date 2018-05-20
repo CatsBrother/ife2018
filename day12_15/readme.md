@@ -36,4 +36,4 @@ display:-webkit-box; 将对象作为弹性伸缩盒模型显示；
 第一种单标签实现，文字左右是两个高度为1px的div，div的宽度即为分隔线的长度
 第二种是通过相对定位移动文字的位置，并设置背景色遮挡住一部分分隔线，分隔线是边框
 
-详细讲解的链接：http://ww w.daqianduan.com/example?pid=4258 
+详细讲解的链接：http://www.daqianduan.com/example?pid=4258 
