@@ -3,6 +3,11 @@
 	margin: 0;
 	padding: 0;
 }
+html,
+body{
+	height: 100%;
+	overflow: hidden;
+}
 body{
 	margin-left: 10px;
 	margin-top: 20px;
@@ -12,6 +17,7 @@ body{
 	overflow: hidden;
 }
 h1{
+	height: 100%;
 	font-size: 36px;
 	line-height: 80px;
 	float: left;
@@ -20,8 +26,6 @@ h1{
 	display: block;
 	text-align: center;
 	color: #fff;
-	margin-bottom:-3000px; 
-	padding-bottom:3000px;
 }
 
 ul{
@@ -50,4 +54,10 @@ span{
 #content{
 	position: absolute;
 	left: 200px;
+	height: auto;
+	overflow: auto;
+	height: 100%;
+}
+#content::-webkit-scrollbar{
+	display: none;
 }
