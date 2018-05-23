@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">    
+    <title>IFE ECMAScript</title>
+</head>
+<body>        
+    <input id="first-number" type="number" value="0" placeholder="第一个数字">
+    <input id="second-number" type="number" value="0" placeholder="第二个数字">
+    <button id="add-btn">加</button>
+    <button id="minus-btn">减</button>
+    <button id="times-btn">乘</button>
+    <button id="divide-btn">除</button>
+    <p id="result">运算结果</p>
+    <script>
+    	//计算并返回值或提示信息
+    	function calculator(btn){
+    		var firstnum = document.getElementById("first-number").value;
+			var secondnum = document.getElementById("second-number").value;
+			firstnum = parseInt(firstnum);
+			secondnum = parseInt(secondnum);
+			if (isNaN(firstnum) || isNaN(secondnum)) {
+				console.log("非法输入");
+				return "非法输入！";
+			}
+			switch(btn){
+				case "add":
+					return firstnum + secondnum;
+					break;
+				case "minus":
+					return firstnum - secondnum;
+					break;
+				case "times":
+					return firstnum * secondnum;
+					break;
+				case "divide":
+					if (secondnum == 0) {
+						console.log("除数不能为0");
+						return "除数不能为0";
+						break;
+					}
+					return firstnum / secondnum;
+					break;
+			}
+		}
+		
+ 
+		document.getElementById("add-btn").onclick = function(){
+			document.getElementById("result").innerHTML = calculator("add");
+		}
+		document.getElementById("minus-btn").onclick = function(){
+			document.getElementById("result").innerHTML = calculator("minus");
+		}
+		document.getElementById("times-btn").onclick = function(){
+			document.getElementById("result").innerHTML = calculator("times");
+		}
+		document.getElementById("divide-btn").onclick = function(){
+			document.getElementById("result").innerHTML = calculator("divide");
+		}
+
+    </script>
+</body>
+</html>
