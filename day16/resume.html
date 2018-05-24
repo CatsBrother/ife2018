@@ -12,6 +12,7 @@
 	<h1>简历</h1>
     <div id="content">
     	<button id="more">more</button>
+    	<p id="hi"></p>
     	<h2>基本信息</h2>
 	    <div class="part">
 		    <ul>
@@ -86,6 +87,22 @@
     		+ "<li>简历</li><br>"
     		+ "</ul>";
     	}
+
+    	var thisdate = new Date();
+    	num=thisdate.getHours();
+    	var str="";
+    	if (5 < num <= 10) {
+    		str = "早上好！";
+    	}else if (10 < num <= 14) {
+    		str = "中午好！";
+    	}else if (14 < num <= 18) {
+    		str = "下午好！";
+    	}else if (18 < num <= 23) {
+    		str = "晚上好！";
+    	}else if (0 <= num <= 5) {
+    		str = "睡觉！";
+    	}
+    	document.getElementById("hi").innerHTML = str;
     </script>
 </body>
 </html>
