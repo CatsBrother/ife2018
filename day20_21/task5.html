@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title></title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<style type="text/css">
+	div{
+		width: 480px;
+		height: 480px;
+		overflow: hidden;
+	}
+	img{
+		position: relative;
+	}
+</style>
+<body>
+	<div id="box">
+		<img src="smile.jpg">
+	</div>
+<script type="text/javascript">
+	//还是有一些问题，第一张图没有显示直接跳过了。
+	var pic = document.getElementsByTagName("img")[0];
+	var ptop = -480; 
+	var long = 480;
+	setInterval("spri()",100);
+	function spri(){
+		if ((ptop > -7680) && (ptop < 0)) {
+			ptop = ptop - long;
+			pic.style.top = ptop + "px";
+		}else {
+			long = -long;
+			ptop = ptop - long;
+			pic.style.top = ptop + "px";
+		}
+	}
+</script>
+</body>
+</html>

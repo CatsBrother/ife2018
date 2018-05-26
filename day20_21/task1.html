@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body onkeydown="kk()">
+    <input id="name" type="text">    
+	<button id="submit-btn" onclick="vclick()">Submit</button>
+	<script type="text/javascript">
+		function kk(){
+			if (event.keyCode == 13) {
+				vclick();
+			}else if (event.keyCode == 27) {
+				document.getElementById("name").value = null;
+			}
+		}
+		function vclick(){
+			var str = document.getElementById("name").value;
+			console.log(str);
+		}
+	</script>
+</body>
+</html>
