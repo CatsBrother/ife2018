@@ -3,16 +3,16 @@
 W3C 文档对象模型Document Object Model（文档对象模型） 是中立于平台和语言的接口，它允许程序和脚本动态地访问和更新文档的内容、结构和样式。HTML DOM 是关于如何获取、修改、添加或删除 HTML 元素的标准
 ## 常用的dom方法和属性
 ### DOM方法
-> getElementById
-> getElementsByTagName
-> getElementsByClassName
-> appendChild(node) 插入新的子节点
-> removeChild(node) 删除子节点
+> getElementById  
+> getElementsByTagName  
+> getElementsByClassName  
+> appendChild(node) 插入新的子节点  
+> removeChild(node) 删除子节点  
 ### DOM 属性
-> innerHTML
-> parentNode
-> childNode
-> attributes 节点的属性节点
+> innerHTML  
+> parentNode  
+> childNode  
+> attributes 节点的属性节点  
 ### 改变元素的样式
 ```
 document.getElementById(id).style.property = new style
