@@ -23,18 +23,18 @@ DOM节点包括 元素节点  文本节点  属性节点
 元素节点和文本节点之间存在父子关系
 innerHTML 只能用于元素节点，不能用于文本节点，否则返回undefined
 ## querySelector() 方法
-### document.querySelect("css选择器")
+### document.querySelector("css选择器")
 返回文档中匹配指定css选择器的**第一个元素**
 ```
 document.guerySelector("#demo");
 ```
-### element.querySelect("css选择器")
+### element.querySelector("css选择器")
 返回文档中匹配指定css选择器的**第一个元素**
 ```
 var x = document.getElementById("demo");
 x.guerySelector("p").innerHTML = "hello world";
 ```
-### element.querySelectAll("css选择器")
+### element.querySelectorAll("css选择器")
 以nodelist返回文档中匹配指定css选择器的所有元素，可以指定某个元素，例如：
 > document.guerySelectorAll(".demo")[1];
 
