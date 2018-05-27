@@ -42,6 +42,7 @@ event包含于创建他有关的属性和方法，还包括一些共同的属性
 ## 事件委托 事件代理
 父元素包含子元素，子元素的事件加到父元素上，可以减少dom操作，利用target可以找到子元素
 详情：https://www.cnblogs.com/liugang-vip/p/5616484.html
+最适合事件委托的事件有：click、mousedown、mouseup、keydown、keyup、keypress
 
 ## 定时
 > setTimeOut()
