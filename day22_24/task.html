@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Examples</title>
+<meta name="description" content="">
+<meta name="keywords" content="">
+<link href="" rel="stylesheet">
+</head>
+<body>
+    <div class="lab">
+	    <label>Number A:<input id="radio-a" type="radio" name="math-obj" value="a"></label><input id="num-a" type="text">
+	    <label>Number B:<input id="radio-b" type="radio" name="math-obj" value="b"></label><input id="num-b" type="text">
+	</div>
+	<div class="btns">
+	    <button id="isNum">判断当前选中的输入框输入内容是否为数字</button>
+	    <button id="round">把 A 四舍五入为 B 个小数位数的数字</button>
+	    <button id="abs">当前选中数字的绝对值</button>
+	    <button id="ceil">对当前选中的数字进行上舍入</button>
+	    <button id="floor">对当前选中的数字进行下舍入</button>
+	    <button id="inte">把当前选中的数字四舍五入为最接近的整数</button>
+	    <button id="max">返回 A 和 B 中的最高值</button>
+	    <button id="min">返回 A 和 B 中的最低值</button>        
+	</div>
+	<p id="result"></p>
+	<script type="text/javascript">
+
+		var btns = document.getElementsByClassName("btns");
+		var btn = document.getElementsByTagName("button");
+		var lab = document.querySelectorAll("label");
+		var radio_a = document.getElementById("radio-a");
+		var radio_b = document.getElementById("radio-b");
+		var result = document.getElementById("result");
+		
+		btns[0].onclick = function(e){
+			num_a = document.getElementById("num-a").value;
+			num_a = Number(num_a);
+		    num_b = document.getElementById("num-b").value;
+		    num_b = Number(num_b);
+
+			var t =e.target;
+			var iid = t.id;
+			var rad = which();
+			var txt = text_value(rad);
+			switch(iid){
+				case "isNum":
+					var val = judgeNum(txt,0);
+					if (val) {
+						result.innerHTML = "是数字！";
+					}else{
+						result.innerHTML = "不是数字！";
+					}
+					break;
+				case "round":
+					judgeNum(num_a,num_b);
+					result.innerHTML = num_a.toFixed(num_b);
+					break;
+				case "abs":
+					judgeNum(txt,0);
+					result.innerHTML = Math.abs(text_value(rad));
+					break;
+				case "ceil":
+					judgeNum(txt,0);
+					result.innerHTML = Math.ceil(text_value(rad));
+					break;
+				case "floor":
+					judgeNum(txt,0);
+					result.innerHTML = Math.floor(text_value(rad));
+					break;
+				case "inte":
+					judgeNum(txt,0);
+					result.innerHTML = intRound(txt);
+					break;
+				case "max":
+				    judgeNum(num_a,num_b);
+					result.innerHTML = Math.max(num_a,num_b);
+					break;
+				case "min":
+					judgeNum(num_a,num_b);
+					result.innerHTML = Math.min(num_a,num_b);
+					break;
+			}
+		}
+		//判断radio选择的是哪个
+		function which(){
+			if (radio_a.checked) {
+				return radio_a;
+			}else if (radio_b.checked) {
+				return radio_b;
+			}
+		}
+		//根据radio获取text值
+		function text_value(type){
+			if (type == radio_a) {
+				return num_a;
+			}else{
+				return num_b;
+			}
+		}
+		//判断是否为数字
+		function judgeNum(num1,num2){
+			if (isNaN(num1) || isNaN(num2)) {
+				console.log("error!It is not number!");
+				return false;
+			}
+			else{
+				return true;
+			}
+		}
+		//四舍五入取整
+		function intRound(num){
+			return num.toFixed(0);
+		}
+		
+	</script>
+</body>
+</html>
