@@ -22,4 +22,4 @@ https://catsbrother.github.io/ife2018/day19/task2.html
 ## day20_21  事件
 https://catsbrother.github.io/ife2018/day20_21/task4.html
 ## day22_24  数据类型数据结构
-https://catsbrother.github.io/ife2018/day22_24/task.html
+https://catsbrother.github.io/ife2018/day22_24/day2224.html
