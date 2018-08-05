@@ -11,7 +11,7 @@
 <body>
     <input id="stack-input" type="text">
 	<p id="stack-cont">栈内容：apple&lt;-pear</p>  
-	<div id="btn">
+	<div id="stackbtn">
 		<button id="push-btn">进栈</button>
 		<button id="pop-btn">退栈</button>
 		<button id="font-btn">打印栈顶元素内容</button>
@@ -26,7 +26,7 @@
 	var pop_btn = document.getElementById("pop-btn");
 	var font_btn = document.getElementById("font-btn");
 	var empty_btn = document.getElementById("empty-btn");
-	var btn = document.getElementById("btn");
+	var stackbtn = document.getElementById("stackbtn");
 	//栈顶为最后一个元素
 	/*btn.onclick = function(e){
 		var t = e.target;
@@ -54,7 +54,7 @@
 		}
 	}*/
 	//栈顶为第一个元素
-	btn.onclick = function(e){
+	stackbtn.onclick = function(e){
 		var t = e.target;
 		switch(t){
 			case push_btn:
